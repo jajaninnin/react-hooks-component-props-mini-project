@@ -1,3 +1,5 @@
+import React from "react";
+
 function About({about, image="https://via.placeholder.com/215"}) {
     return (
         <aside>
@@ -7,4 +9,4 @@ function About({about, image="https://via.placeholder.com/215"}) {
     )
 }
 
-export default About
+export default About;
