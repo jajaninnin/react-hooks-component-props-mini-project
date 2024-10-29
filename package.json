@@ -4,7 +4,9 @@
   "private": true,
   "jest": {
     "transform": {
-      "^.+\\.js$": "babel-jest"    }
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "testEnvironment": "jsdom"
   },
   "dependencies": {
     "react": "^17.0.1",
@@ -12,10 +14,12 @@
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
     "@learn-co-curriculum/jest-learn-reporter": "^0.1.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "jest-environment-jsdom": "^29.7.0",
     "mocha": "^8.2.1"
   },
   "scripts": {
